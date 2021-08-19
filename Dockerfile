@@ -1,9 +1,16 @@
 # BASE phase
 FROM node:alpine as base
-WORKDIR /home/node/app
-COPY --chown=node:node ./package.json ./
+
+# WSL2
+# WORKDIR /home/node/app 
+# COPY --chown=node:node ./package.json ./
+WORKDIR '/app'
+COPY package*.json ./
 RUN npm install
-COPY --chown=node:node ./ ./
+
+# WSL2
+# COPY --chown=node:node ./ ./
+COPY . .
 RUN npm run build
 
 # RUN phase
