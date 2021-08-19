@@ -7,4 +7,4 @@ before_install:
   - docker build -t chansd5/react-nginx-docker-templater -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true chansd5/docker-react npm run test
+  - docker run -e CI=true chansd5/react-nginx-docker-templater npm run test
