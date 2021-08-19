@@ -1,5 +1,5 @@
 # BASE phase
-FROM node:alpine as builder
+FROM node:alpine as base
 WORKDIR /home/node/app
 COPY --chown=node:node ./package.json ./
 RUN npm install
@@ -8,4 +8,4 @@ RUN npm run build
 
 # RUN phase
 FROM nginx
-COPY --from=builder /home/node/app/build /usr/share/nginx/html
+COPY --from=base /home/node/app/build /usr/share/nginx/html
