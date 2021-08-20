@@ -3,6 +3,6 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/Winfield + Springfield + Duo = WE SPOOKY/i);
+  const linkElement = screen.getByText(/CONDOLENCES/i);
   expect(linkElement).toBeInTheDocument();
 });
