@@ -12,7 +12,7 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: react-nginx-test-app
+  app: "react-nginx-test-app"
   env: "Reactnginxtestapp-env"
   bucket_name: "elasticbeanstalk-us-east-1-719222167959"
   bucket_path: "react-nginx-test-app"
