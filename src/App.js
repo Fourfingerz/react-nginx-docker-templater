@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import hunt from './Hunttrash.jpg'; // HUNT TRASH MEME
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           {/* Edit <code>src/App.js</code> and save to reload. */}
-          I was...
+          YO PAT, MY CONDOLENCES THAT YOU CANNOT COWBOY. I'LL TIP MY HAT AT YOU.
         </p>
         <a
           className="App-link"
@@ -16,7 +17,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Winfield + Springfield + Duo = WE SPOOKY
+          <img src={hunt} alt="this is hunt image" />
         </a>
       </header>
     </div>
