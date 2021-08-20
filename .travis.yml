@@ -8,3 +8,15 @@ before_install:
 
 script:
   - docker run -e CI=true chansd5/react-nginx-docker-templater npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: react-nginx-test-app
+  env: "Reactnginxtestapp-env"
+  bucket_name: "elasticbeanstalk-us-east-1-719222167959"
+  bucket_path: "react-nginx-test-app"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY

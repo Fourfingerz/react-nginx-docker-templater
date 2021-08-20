@@ -1,0 +1,17 @@
+FROM node:alpine
+
+# WSL2 Config
+USER node  
+
+# WSL2 
+RUN mkdir -p /home/node/app
+WORKDIR /home/node/app
+
+# WSL2
+COPY --chown=node:node ./package.json ./
+RUN npm install
+
+# WSL2
+COPY --chown=node:node ./ ./
+
+CMD ["npm", "run", "start"]
