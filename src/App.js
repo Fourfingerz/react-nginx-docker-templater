@@ -9,6 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           {/* Edit <code>src/App.js</code> and save to reload. */}
+          HO HO HO HO.
           YO PAT, MY CONDOLENCES THAT YOU CANNOT COWBOY. I'LL TIP MY HAT AT YOU.
         </p>
         <a
