@@ -10,4 +10,4 @@ RUN npm run build
 # RUN phase
 FROM nginx
 EXPOSE 80
-COPY --from=base /home/node/app/build /usr/share/nginx/html
+COPY --from=base /app/build /usr/share/nginx/html
