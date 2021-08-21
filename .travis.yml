@@ -8,6 +8,7 @@ before_install:
 
 script:
   - docker run -e CI=true chansd5/react-nginx-docker-templater npm run test
+  # - docker run chansd5/react-nginx-docker-templater npm run test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
